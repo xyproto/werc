@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+    <title>{{ pageTitle }}</title>
+
+    <link rel="stylesheet" href="/pub/style/style.css" type="text/css" media="screen, handheld" title="default">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+
+{% if file_exists(sitedir .. "/_werc/pub/style.css") %}
+    <link rel="stylesheet" href="/_werc/pub/style.css" type="text/css" media="screen" title="default">
+{% endif %}
+
+    <meta charset="UTF-8">
+    {# Legacy charset declaration for backards compatibility with non-html5 browsers. #}
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+{% if meta_description %}
+    <meta name="description" content="{{ meta_description }}">
+{% endif %}
+{% if meta_keywords %}
+    <meta name="keywords" content="{{ meta_keywords }}">
+{% endif %}
+
+{% if file_exists("headers.inc") %}
+  {{ render("headers.inc" }}
+{% endif %}
+
+{{ extraHeaders }}
+
+</head>
+<body>
+
