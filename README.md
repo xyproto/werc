@@ -1,5 +1,13 @@
-werc - a minimalist document management system
-----------------------------------------------
+# werc - a minimalist document management system
+
+Work in progress
+----------------
+
+This is a port of werc to [algernon](https://github.com/xyproto/algernon).
+It is also a work in progress.
+
+About werc
+----------
 
 Werc is a content management system and web (anti-)framework designed to be simple to
 use, simple to setup, simple to hack on, and not get on the way while allowing
@@ -68,14 +76,3 @@ get feedback about you experience setting it up.
 If you want to be notified of new releases see the News section of the website
 or use Freshmeat: http://freshmeat.net/projects/werc/
 
-Thanks
-------
-
-Garbeam, Kris Maglione, sqweek, soul9, mycroftiv, maht, yiyus and many others
-for their ideas, patches, testing and other contributions.
-
-
-License
--------
-
-Werc is in the public domain.
